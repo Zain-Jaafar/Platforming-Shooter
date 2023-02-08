@@ -2,8 +2,8 @@ import pygame
 import sys
 
 pygame.init()
-from level import level
-from player import player
+# from level import level
+# from player import player
 from settings import *
 
 while True:
@@ -21,4 +21,4 @@ while True:
             sys.exit()
 
     pygame.display.update()
-    clock.tick(2000)
+    clock.tick(tickrate)
