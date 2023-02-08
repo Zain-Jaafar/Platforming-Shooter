@@ -2,13 +2,12 @@ import pygame
 import sys
 
 pygame.init()
-# from level import level
-# from player import player
+from level import Level
 from settings import *
 
-while True:
-    SCREEN.fill((0, 0, 0))
+level = Level()
 
+while True:
     # Event Loop
     for event in pygame.event.get():
         # Close game if the windows X button is pressed
@@ -19,6 +18,9 @@ while True:
         ):
             pygame.quit()
             sys.exit()
+
+    SCREEN.fill(BACKGROUND_COLOUR)
+    level.run()
 
     pygame.display.update()
     clock.tick(tickrate)

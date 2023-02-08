@@ -1,4 +1,5 @@
-import pygame, os
+import pygame
+import os
 
 clock = pygame.time.Clock()
 tickrate = 60
@@ -13,7 +14,7 @@ pygame.display.set_caption("Platforming Shooter")
 
 game_font = pygame.font.Font(os.path.join("Fonts/Pixeltype.ttf"), 20)
 
-BG_COLOUR = "#060C17"
+BACKGROUND_COLOUR = "#060C17"
 PLAYER_COLOUR = "#C4F7FF"
 TILE_COLOUR = "#94D7F2"
 
