@@ -49,6 +49,9 @@ class Player(pygame.sprite.Sprite):
                     self.direction.y = 0
                     self.on_floor = True
 
+        if self.on_floor and self.direction.y != 0:
+            self.on_floor = False
+
     def apply_gravity(self):
         self.direction.y += self.gravity
         self.rect.y += self.direction.y
